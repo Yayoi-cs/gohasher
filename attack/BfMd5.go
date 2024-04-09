@@ -33,11 +33,6 @@ func genMd5(str string) bool {
 	return false
 }
 
-var (
-	line string = ""
-	sus  bool   = false
-)
-
 func BruteforceMd5(arg string) {
 	line = arg
 	for charLen := 1; ; charLen++ {
